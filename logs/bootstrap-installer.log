@@ -1,0 +1,47 @@
+2026-08-31T08:44:31.879175Z  INFO hermes_bootstrap_lib: Hermes installer starting mode=Install force_setup=false
+2026-08-31T08:44:36.153792Z  INFO hermes_bootstrap_lib::bootstrap: bootstrap starting pin=Pin { commit: None, branch: Some("main") } kind=Ps1 include_desktop=true
+2026-08-31T08:44:36.154185Z  INFO bootstrap.log: [bootstrap] downloading install.ps1 for mutable ref main from GitHub
+2026-08-31T08:44:40.076943Z  INFO hermes_bootstrap_lib: Hermes installer starting mode=Install force_setup=false
+2026-08-31T08:44:41.239060Z  INFO bootstrap.log: [bootstrap] cached to C:\Users\hm901\AppData\Local\hermes\bootstrap-cache\install-main.ps1
+2026-08-31T08:44:41.239410Z  INFO bootstrap.log: [bootstrap] script C:\Users\hm901\AppData\Local\hermes\bootstrap-cache\install-main.ps1 via downloaded
+2026-08-31T08:44:42.778198Z  WARN bootstrap.log: stderr: [hermes] long profile root: C:\Users\hm901 stage=__manifest__
+2026-08-31T08:44:43.082182Z  INFO bootstrap.log: {"stages":[{"title":"Installing uv package manager","category":"prereqs","name":"uv","needs_user_input":false},{"title":"Verifying Python 3.11","category":"prereqs","name":"python","needs_user_input":false},{"title":"Installing Git","category":"prereqs","name":"git","needs_user_input":false},{"title":"Detecting Node.js","category":"prereqs","name":"node","needs_user_input":false},{"title":"Installing ripgrep and ffmpeg","category":"prereqs","name":"system-packages","needs_user_input":false},{"title":"Cloning Hermes repository","category":"install","name":"repository","needs_user_input":false},{"title":"Creating Python virtual environment","category":"install","name":"venv","needs_user_input":false},{"title":"Installing Python dependencies","category":"install","name":"dependencies","needs_user_input":false},{"title":"Installing Node.js dependencies","category":"install","name":"node-deps","needs_user_input":false},{"title":"Building desktop app","category":"install","name":"desktop","needs_user_input":false},{"title":"Adding Hermes to PATH","category":"finalize","name":"path","needs_user_input":false},{"title":"Writing configuration templates","category":"finalize","name":"config-templates","needs_user_input":false},{"title":"Installing messaging platform SDKs","category":"finalize","name":"platform-sdks","needs_user_input":false},{"title":"Marking install complete","category":"finalize","name":"bootstrap-marker","needs_user_input":false},{"title":"Configuring API keys and models","category":"post-install","name":"configure","needs_user_input":true},{"title":"Starting messaging gateway","category":"post-install","name":"gateway","needs_user_input":true}],"protocol_version":1} stage=__manifest__
+2026-08-31T08:44:43.129586Z  INFO hermes_bootstrap_lib::bootstrap: manifest received stage_count=16 names=["uv", "python", "git", "node", "system-packages", "repository", "venv", "dependencies", "node-deps", "desktop", "path", "config-templates", "platform-sdks", "bootstrap-marker", "configure", "gateway"]
+2026-08-31T08:44:43.129640Z  INFO hermes_bootstrap_lib::bootstrap: stage transition stage=uv state=Running duration_ms=None error=None
+2026-08-31T08:44:43.999228Z  WARN bootstrap.log: stderr: [hermes] long profile root: C:\Users\hm901 stage=uv
+2026-08-31T08:44:44.283827Z  INFO bootstrap.log: -> Installing managed uv into C:\Users\hm901\AppData\Local\hermes\bin ... stage=uv
+2026-08-31T08:46:01.900327Z  INFO bootstrap.log: -> uv installer succeeded via astral.sh stage=uv
+2026-08-31T08:46:12.838034Z  INFO bootstrap.log: [OK] Managed uv installed (uv 0.12.7 (61291a8ca 2026-08-27 x86_64-pc-windows-msvc)) stage=uv
+2026-08-31T08:46:12.973261Z  INFO bootstrap.log: {"skipped":false,"ok":true,"reason":null,"duration_ms":88751,"stage":"uv"} stage=uv
+2026-08-31T08:46:13.009866Z  INFO hermes_bootstrap_lib::bootstrap: stage transition stage=uv state=Succeeded duration_ms=Some(89855) error=None
+2026-08-31T08:46:13.009933Z  INFO hermes_bootstrap_lib::bootstrap: stage transition stage=python state=Running duration_ms=None error=None
+2026-08-31T08:46:14.644183Z  WARN bootstrap.log: stderr: [hermes] long profile root: C:\Users\hm901 stage=python
+2026-08-31T08:46:14.935039Z  INFO bootstrap.log: -> Checking Python 3.11... stage=python
+2026-08-31T08:46:16.746611Z  INFO bootstrap.log: -> Python 3.11 not found, installing via uv... stage=python
+2026-08-31T08:47:25.443818Z  INFO bootstrap.log: [OK] Python installed: Python 3.11.16 stage=python
+2026-08-31T08:47:25.508265Z  INFO bootstrap.log: {"skipped":false,"ok":true,"reason":null,"duration_ms":70772,"stage":"python"} stage=python
+2026-08-31T08:47:25.548549Z  INFO hermes_bootstrap_lib::bootstrap: stage transition stage=python state=Succeeded duration_ms=Some(72518) error=None
+2026-08-31T08:47:25.548692Z  INFO hermes_bootstrap_lib::bootstrap: stage transition stage=git state=Running duration_ms=None error=None
+2026-08-31T08:47:26.053587Z  WARN bootstrap.log: stderr: [hermes] long profile root: C:\Users\hm901 stage=git
+2026-08-31T08:47:26.182322Z  INFO bootstrap.log: -> Checking Git... stage=git
+2026-08-31T08:47:27.052228Z  INFO bootstrap.log: [OK] Git found (git version 2.51.0.windows.1) stage=git
+2026-08-31T08:47:27.204171Z  INFO bootstrap.log: -> Set HERMES_GIT_BASH_PATH=C:\Program Files\Git\bin\bash.exe stage=git
+2026-08-31T08:47:28.012410Z  INFO bootstrap.log: [OK] Git Bash can launch MSYS programs stage=git
+2026-08-31T08:47:28.060438Z  INFO bootstrap.log: {"skipped":false,"ok":true,"reason":null,"duration_ms":1926,"stage":"git"} stage=git
+2026-08-31T08:47:28.086594Z  INFO hermes_bootstrap_lib::bootstrap: stage transition stage=git state=Succeeded duration_ms=Some(2537) error=None
+2026-08-31T08:47:28.086640Z  INFO hermes_bootstrap_lib::bootstrap: stage transition stage=node state=Running duration_ms=None error=None
+2026-08-31T08:47:28.544310Z  WARN bootstrap.log: stderr: [hermes] long profile root: C:\Users\hm901 stage=node
+2026-08-31T08:47:28.634962Z  INFO bootstrap.log: -> Checking Node.js (for browser tools)... stage=node
+2026-08-31T08:47:31.600496Z  INFO bootstrap.log: [!] Node.js v20.20.0 is unsupported (Hermes requires Node 22.22+, 24.11+, or 26+) stage=node
+2026-08-31T08:47:31.601624Z  INFO bootstrap.log: -> Using a Hermes-managed Node.js installation instead... stage=node
+2026-08-31T08:47:31.602544Z  INFO bootstrap.log: -> Installing Hermes-managed Node.js 22 LTS... stage=node
+2026-08-31T08:47:31.603369Z  INFO bootstrap.log: -> Downloading portable Node.js 22 to C:\Users\hm901\AppData\Local\hermes\node\ ... stage=node
+2026-08-31T08:47:31.604154Z  INFO bootstrap.log: -> (no admin rights required; isolated from any system Node install) stage=node
+2026-08-31T08:50:29.678284Z  INFO bootstrap.log: [OK] Node.js v22.23.2 installed to C:\Users\hm901\AppData\Local\hermes\node\ (portable, user-scoped) stage=node
+2026-08-31T08:50:32.393270Z  INFO bootstrap.log: {"skipped":false,"ok":true,"reason":null,"duration_ms":183575,"stage":"node"} stage=node
+2026-08-31T08:50:32.536390Z  INFO hermes_bootstrap_lib::bootstrap: stage transition stage=node state=Succeeded duration_ms=Some(184398) error=None
+2026-08-31T08:50:32.536510Z  INFO hermes_bootstrap_lib::bootstrap: stage transition stage=system-packages state=Running duration_ms=None error=None
+2026-08-31T08:50:33.358169Z  WARN bootstrap.log: stderr: [hermes] long profile root: C:\Users\hm901 stage=system-packages
+2026-08-31T08:50:33.525324Z  INFO bootstrap.log: -> Checking ripgrep (fast file search)... stage=system-packages
+2026-08-31T08:50:34.590072Z  INFO bootstrap.log: -> Checking ffmpeg (TTS voice messages)... stage=system-packages
+2026-08-31T08:50:34.750164Z  INFO bootstrap.log: -> Installing ripgrep for faster file search and ffmpeg for TTS voice messages via winget... stage=system-packages

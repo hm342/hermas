@@ -1,0 +1,161 @@
+2026-08-31 15:19:43,530 WARNING hermes_state: state.db: on-disk journal_mode was delete and has been switched to WAL. This rewrites the database header and persists after this process exits. If delete was a deliberate choice (for example the mitigation for the SQLite WAL-reset bug, or a WAL-unsafe filesystem), setting it with PRAGMA on the file will not survive -- every open re-applies the configured mode. Set `database.journal_mode: delete` in config.yaml to make it stick. This message fires once per process per database.
+2026-08-31 15:20:27,690 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-31 15:20:28,571 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-31 15:20:47,475 WARNING gateway.shutdown_watchdog: Loop tick socket unavailable — liveness probes will have no loop-scheduling witness and will not escalate on a stale heartbeat
+Traceback (most recent call last):
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\gateway\shutdown_watchdog.py", line 572, in loop_heartbeat_forever
+    tick_server = await asyncio.start_unix_server(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'asyncio' has no attribute 'start_unix_server'
+2026-08-31 17:37:41,846 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-31 17:37:43,312 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-31 17:37:59,929 WARNING gateway.shutdown_watchdog: Loop tick socket unavailable — liveness probes will have no loop-scheduling witness and will not escalate on a stale heartbeat
+Traceback (most recent call last):
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\gateway\shutdown_watchdog.py", line 572, in loop_heartbeat_forever
+    tick_server = await asyncio.start_unix_server(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'asyncio' has no attribute 'start_unix_server'
+2026-08-31 17:38:09,490 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 5588326400 in chat 5588326400
+2026-08-31 17:38:46,784 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 5588326400 in chat 5588326400
+2026-09-01 12:51:17,794 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-09-01 12:51:18,235 WARNING tools.registry: check_fn _a2a_tools_available returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:18,268 WARNING tools.registry: check_fn check_browser_back_requirements returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:18,268 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:18,268 WARNING tools.registry: check_fn check_browser_click_requirements returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:18,268 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:18,278 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:18,305 WARNING tools.registry: check_fn check_browser_navigate_requirements returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:18,305 WARNING tools.registry: check_fn check_browser_press_requirements returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:18,305 WARNING tools.registry: check_fn check_browser_scroll_requirements returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:18,305 WARNING tools.registry: check_fn check_browser_snapshot_requirements returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:18,313 WARNING tools.registry: check_fn check_browser_type_requirements returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:18,313 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:18,369 WARNING tools.registry: check_fn check_discord_tool_requirements returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:18,369 WARNING tools.registry: check_fn _check_feishu returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:18,376 WARNING tools.registry: check_fn _check_feishu returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:18,376 WARNING tools.registry: check_fn _check_ha_available returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:18,376 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:18,376 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:18,376 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:18,376 WARNING tools.registry: check_fn check_react_requirements returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:18,398 WARNING tools.registry: check_fn _check_spotify_available returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:18,453 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-09-01 12:51:26,219 WARNING tools.registry: check_fn check_video_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:26,259 WARNING tools.registry: check_fn check_x_search_requirements returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:26,259 WARNING tools.registry: check_fn _check_xai_video_requirements returned False; dependent tools will be unavailable this turn
+2026-09-01 12:51:26,346 WARNING tools.registry: check_fn _check_yuanbao returned False; dependent tools will be unavailable this turn
+2026-09-01 13:19:03,152 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-01 13:19:03,552 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 13:19:03,873 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-01 13:19:03,905 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 13:19:04,816 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 13:19:05,547 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 13:19:05,606 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling degraded (heartbeat probe); gateway stays alive and will retry. Error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-09-01 13:19:05,629 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-09-01 13:19:06,751 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 13:19:06,871 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 13:19:08,449 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 13:19:09,258 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 13:19:11,576 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 13:19:12,032 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 13:19:12,041 ERROR telegram.ext.Updater: Error while calling `get_updates` one more time to mark all fetched updates. Suppressing error to ensure graceful shutdown. When polling for updates is restarted, updates may be fetched again. Please adjust timeouts via `ApplicationBuilder` or the parameter `get_updates_request` of `Bot`.
+Traceback (most recent call last):
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\httpx\_transports\default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\httpcore\_async\connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\httpcore\_async\connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    raise exc
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\httpcore\_async\connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\httpcore\_async\connection.py", line 124, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\httpcore\_backends\auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\httpcore\_backends\anyio.py", line 113, in connect_tcp
+    with map_exceptions(exc_map):
+  File "C:\Users\hm901\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\telegram\request\_httpxrequest.py", line 279, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\httpx\_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\httpx\_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\httpx\_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\httpx\_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\httpx\_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\plugins\platforms\telegram\telegram_network.py", line 228, in handle_async_request
+    raise last_error
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\plugins\platforms\telegram\telegram_network.py", line 189, in handle_async_request
+    response = await transport.handle_async_request(candidate)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\httpx\_transports\default.py", line 393, in handle_async_request
+    with map_httpcore_exceptions():
+  File "C:\Users\hm901\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\telegram\ext\_updater.py", line 400, in _get_updates_cleanup
+    await self.bot.get_updates(
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\telegram\ext\_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\telegram\_bot.py", line 4767, in get_updates
+    await self._post(
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\telegram\_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\telegram\ext\_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\telegram\_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\telegram\request\_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\telegram\request\_baserequest.py", line 305, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\plugins\platforms\telegram\adapter.py", line 2699, in do_request
+    result = await super().do_request(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hm901\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\telegram\request\_httpxrequest.py", line 303, in do_request
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-09-01 13:50:56,204 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-01 13:50:56,219 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 13:52:54,997 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path api.telegram.org failed; re-walking IPv4 literals before the hostname
+2026-09-01 13:52:55,001 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ()
+2026-09-01 13:52:56,695 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)

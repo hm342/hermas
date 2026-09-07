@@ -1,0 +1,356 @@
+✗ Another gateway instance is already running (PID 19732).
+  Use 'hermes gateway restart' to replace it,
+  or 'hermes gateway stop' first.
+  Or use 'hermes gateway run --replace' to auto-replace.
+2026-09-01 13:19:03,152 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-01 13:19:03,552 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 13:19:03,873 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-01 13:19:03,905 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 13:19:04,816 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 13:19:05,547 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 13:19:05,606 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling degraded (heartbeat probe); gateway stays alive and will retry. Error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-09-01 13:19:05,629 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-09-01 13:19:06,751 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 13:19:06,871 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 13:19:08,449 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 13:19:09,258 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 13:19:11,576 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 13:19:12,032 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 13:44:24,373 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-01 13:44:24,642 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 1); health pending getUpdates progress
+2026-09-01 13:44:35,996 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-01 13:44:36,019 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling confirmed healthy: getUpdates progressing (generation 2)
+2026-09-01 13:50:56,204 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-01 13:50:56,219 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 13:52:54,997 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path api.telegram.org failed; re-walking IPv4 literals before the hostname
+2026-09-01 13:52:55,001 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ()
+2026-09-01 13:52:56,695 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-01 13:52:57,477 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:5588326400 (395 chars)
+2026-09-01 13:52:58,426 INFO gateway.run: inbound message: platform=telegram user=Harshit Mishra chat=5588326400 msg="Hi Megatron! My name is Harshit Mishra. I'm a researcher,ai engineeer developer," reply_to_id=None reply_to_text=''
+2026-09-01 13:53:17,290 INFO gateway.control_socket: Gateway control pipe listening at \\.\pipe\hermes-gateway-435b88dba892bff0
+2026-09-01 13:53:17,337 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=19732, started_at=2026-09-01T07:21:17.378288+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-31T12:25:57.814907+00:00 last_mem=None suspected_oom=False
+2026-09-01 13:53:17,389 INFO gateway.run: Starting Hermes Gateway...
+2026-09-01 13:53:17,392 INFO gateway.run: Session storage: C:\Users\hm901\AppData\Local\hermes\sessions
+2026-09-01 13:53:17,395 INFO gateway.run: Agent budget: max_iterations=150 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-09-01 13:53:17,395 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-09-01 13:53:17,452 INFO gateway.run: Marked 1 in-flight session(s) as resumable from previous run (1 exact, 0 legacy)
+2026-09-01 13:53:17,474 INFO gateway.run: Connecting to telegram...
+2026-09-01 13:53:17,520 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-09-01 13:53:18,945 INFO gateway.run: Turn machinery warmed in 1.5s (37 tool schema(s) materialized)
+2026-09-01 13:53:19,692 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-09-01 13:53:19,693 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-09-01 13:53:19,745 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-09-01 13:53:22,860 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-01 13:53:36,989 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-01 13:53:36,993 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling confirmed healthy: getUpdates progressing (generation 1)
+2026-09-01 13:53:37,036 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-09-01 13:53:37,651 INFO gateway.run: ✓ telegram connected
+2026-09-01 13:53:37,865 INFO gateway.run: Gateway running with 1 platform(s)
+2026-09-01 13:53:37,940 INFO gateway.run: Channel directory built: 1 target(s)
+2026-09-01 13:53:39,056 INFO gateway.run: Scheduled auto-resume for 1 restart-interrupted session(s)
+2026-09-01 13:53:39,114 INFO gateway.run: Press Ctrl+C to stop
+2026-09-01 13:53:39,132 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (C:\Users\hm901\AppData\Local\hermes\kanban\.dispatcher.lock)
+2026-09-01 13:53:39,156 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-09-01 13:53:39,211 INFO gateway.run: inbound message: platform=telegram user=Harshit Mishra chat=5588326400 msg='' reply_to_id=None reply_to_text=''
+2026-09-01 13:53:39,758 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-09-01 13:53:40,171 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-09-01 13:53:40,618 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-09-01 13:53:40,623 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 6 hidden (over 60 limit). Use /commands for full list.
+2026-09-01 13:53:44,133 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-09-01 13:54:16,190 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:5588326400 (404 chars)
+2026-09-01 13:54:39,165 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:5588326400: streamed=False previewed=False content_delivered=False transformed=False final_len=530 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-01 13:54:39,166 INFO gateway.run: response ready: platform=telegram chat=5588326400 time=60.0s api_calls=2 response=530 chars
+2026-09-01 13:54:39,283 INFO gateway.platforms.base: [Telegram] Sending response (530 chars) to 5588326400
+2026-09-01 13:57:09,643 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-01 13:57:09,690 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:00:43,396 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:5588326400 (90 chars)
+2026-09-01 14:00:43,663 INFO gateway.run: inbound message: platform=telegram user=Harshit Mishra chat=5588326400 msg='research and take free api for image generation for you add it in you for genera' reply_to_id=None reply_to_text=''
+2026-09-01 14:01:45,238 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-01 14:01:45,240 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:01:46,872 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-01 14:01:49,422 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-01 14:02:36,290 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:5588326400: streamed=False previewed=False content_delivered=False transformed=False final_len=2526 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-01 14:02:36,296 INFO gateway.run: response ready: platform=telegram chat=5588326400 time=112.6s api_calls=5 response=2526 chars
+2026-09-01 14:02:36,587 INFO gateway.platforms.base: [Telegram] Sending response (2526 chars) to 5588326400
+2026-09-01 14:04:49,866 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:5588326400 (66 chars)
+2026-09-01 14:04:49,975 INFO gateway.run: inbound message: platform=telegram user=Harshit Mishra chat=5588326400 msg='i want to set corn job for daily social media post with news image' reply_to_id=None reply_to_text=''
+2026-09-01 14:05:13,422 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:5588326400: streamed=False previewed=False content_delivered=False transformed=False final_len=1020 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-01 14:05:13,427 INFO gateway.run: response ready: platform=telegram chat=5588326400 time=23.5s api_calls=1 response=1020 chars
+2026-09-01 14:05:13,513 INFO gateway.platforms.base: [Telegram] Sending response (1020 chars) to 5588326400
+2026-09-01 14:13:02,449 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path api.telegram.org failed; re-walking IPv4 literals before the hostname
+2026-09-01 14:13:02,599 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([WinError 10038] An operation was attempted on something that is not a socket)
+2026-09-01 14:13:05,161 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-01 14:13:05,447 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:5588326400 (56 chars)
+2026-09-01 14:13:05,826 INFO gateway.run: inbound message: platform=telegram user=Harshit Mishra chat=5588326400 msg='okey start one by one first setup with social media apps' reply_to_id=None reply_to_text=''
+2026-09-01 14:13:35,415 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:5588326400: streamed=False previewed=False content_delivered=False transformed=False final_len=1584 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-01 14:13:35,420 INFO gateway.run: response ready: platform=telegram chat=5588326400 time=29.6s api_calls=2 response=1584 chars
+2026-09-01 14:13:35,537 INFO gateway.platforms.base: [Telegram] Sending response (1584 chars) to 5588326400
+2026-09-01 14:15:51,355 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:5588326400 (31 chars)
+2026-09-01 14:15:51,445 INFO gateway.run: inbound message: platform=telegram user=Harshit Mishra chat=5588326400 msg='1, twitter , linkedin,instagram' reply_to_id=None reply_to_text=''
+2026-09-01 14:16:18,050 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:5588326400: streamed=False previewed=False content_delivered=False transformed=False final_len=1664 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-01 14:16:18,054 INFO gateway.run: response ready: platform=telegram chat=5588326400 time=26.6s api_calls=1 response=1664 chars
+2026-09-01 14:16:18,158 INFO gateway.platforms.base: [Telegram] Sending response (1662 chars) to 5588326400
+2026-09-01 14:19:37,418 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-01 14:19:37,427 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:35:39,051 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:5588326400 (11 chars)
+2026-09-01 14:35:39,356 INFO gateway.run: inbound message: platform=telegram user=Harshit Mishra chat=5588326400 msg='i want free' reply_to_id=None reply_to_text=''
+2026-09-01 14:36:57,255 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:5588326400: streamed=False previewed=False content_delivered=False transformed=False final_len=2496 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-01 14:36:57,259 INFO gateway.run: response ready: platform=telegram chat=5588326400 time=77.9s api_calls=2 response=2496 chars
+2026-09-01 14:36:57,372 INFO gateway.platforms.base: [Telegram] Sending response (2496 chars) to 5588326400
+2026-09-01 14:39:03,163 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path api.telegram.org failed; re-walking IPv4 literals before the hostname
+2026-09-01 14:39:03,245 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ()
+2026-09-01 14:39:16,147 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-01 14:39:30,881 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-01 14:39:30,885 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:39:32,453 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ()
+2026-09-01 14:39:32,481 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network _redact_telegram_error_text(error), scheduling reconnect: httpx.ConnectError: 
+2026-09-01 14:39:32,500 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ConnectError: 
+2026-09-01 14:39:41,938 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-01 14:39:44,386 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 1); health pending getUpdates progress
+2026-09-01 14:39:56,090 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling confirmed healthy: getUpdates progressing (generation 2)
+2026-09-01 14:42:35,957 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-01 14:42:35,961 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:42:45,984 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ()
+2026-09-01 14:42:56,153 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:43:01,698 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ()
+2026-09-01 14:43:01,705 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network _redact_telegram_error_text(error), scheduling reconnect: httpx.ConnectError: 
+2026-09-01 14:43:01,856 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ConnectError: 
+2026-09-01 14:43:05,181 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:43:08,705 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:43:09,558 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path api.telegram.org failed; re-walking IPv4 literals before the hostname
+2026-09-01 14:43:09,630 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ()
+2026-09-01 14:43:11,708 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:43:20,956 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-01 14:43:20,960 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 1); health pending getUpdates progress
+2026-09-01 14:43:36,176 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling confirmed healthy: getUpdates progressing (generation 3)
+2026-09-01 14:43:49,713 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path api.telegram.org failed; re-walking IPv4 literals before the hostname
+2026-09-01 14:43:49,721 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ()
+2026-09-01 14:44:02,677 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-01 14:44:15,268 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-01 14:44:15,270 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:46:47,042 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path api.telegram.org failed; re-walking IPv4 literals before the hostname
+2026-09-01 14:46:47,054 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ()
+2026-09-01 14:46:58,777 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-01 14:47:13,576 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-01 14:47:13,579 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:47:15,926 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ()
+2026-09-01 14:47:15,944 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network _redact_telegram_error_text(error), scheduling reconnect: httpx.ConnectError: 
+2026-09-01 14:47:15,951 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ConnectError: 
+2026-09-01 14:47:22,583 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:47:27,737 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 1); health pending getUpdates progress
+2026-09-01 14:47:41,108 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling confirmed healthy: getUpdates progressing (generation 4)
+2026-09-01 14:49:32,616 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path api.telegram.org failed; re-walking IPv4 literals before the hostname
+2026-09-01 14:49:32,619 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ()
+2026-09-01 14:49:42,119 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-01 14:49:42,121 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:49:44,043 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ()
+2026-09-01 14:49:44,048 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling degraded (heartbeat probe); gateway stays alive and will retry. Error: httpx.ConnectError: 
+2026-09-01 14:49:44,051 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ConnectError: 
+2026-09-01 14:49:51,175 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:50:02,436 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-01 14:50:02,440 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 1); health pending getUpdates progress
+2026-09-01 14:50:15,324 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling confirmed healthy: getUpdates progressing (generation 5)
+2026-09-01 14:50:45,774 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path api.telegram.org failed; re-walking IPv4 literals before the hostname
+2026-09-01 14:50:45,780 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([WinError 10038] An operation was attempted on something that is not a socket)
+2026-09-01 14:50:48,076 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:50:48,079 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network _redact_telegram_error_text(error), scheduling reconnect: httpx.ConnectError: 
+2026-09-01 14:50:48,089 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ConnectError: 
+2026-09-01 14:51:01,328 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-01 14:51:05,688 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 1); health pending getUpdates progress
+2026-09-01 14:51:25,578 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling confirmed healthy: getUpdates progressing (generation 6)
+2026-09-01 14:52:18,460 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-01 14:52:18,461 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:52:50,070 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path api.telegram.org failed; re-walking IPv4 literals before the hostname
+2026-09-01 14:52:50,080 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ()
+2026-09-01 14:52:52,830 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:52:52,833 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network _redact_telegram_error_text(error), scheduling reconnect: httpx.ConnectError: 
+2026-09-01 14:52:52,837 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ConnectError: 
+2026-09-01 14:52:55,367 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-01 14:52:55,369 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:53:03,424 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ()
+2026-09-01 14:53:04,844 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:53:12,882 ERROR hermes_plugins.telegram_platform.adapter: [Telegram] Telegram updater.stop() did not finish before the network-recovery deadline; rebuilding the adapter instead of reusing an Updater whose lifecycle lock may still be held. (likely CLOSE-WAIT socket)
+2026-09-01 14:53:12,967 ERROR gateway.run: Fatal telegram adapter error (telegram_network_error): Telegram updater.stop() did not finish before the network-recovery deadline; rebuilding the adapter instead of reusing an Updater whose lifecycle lock may still be held.
+2026-09-01 14:53:13,013 INFO gateway.run: telegram queued for background reconnection
+2026-09-01 14:53:13,082 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Disconnected from Telegram
+2026-09-01 14:53:13,086 WARNING gateway.run: No connected messaging platforms remain, but 1 platform(s) queued for reconnection — gateway staying alive, watcher will retry in background.
+2026-09-01 14:53:13,610 INFO gateway.run: Reconnecting telegram (attempt 1)...
+2026-09-01 14:53:13,800 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-09-01 14:53:17,899 INFO plugins.platforms.telegram.telegram_network: DoH discovery yielded no usable IPs (system DNS: 149.154.166.110); using seed fallback IPs 149.154.166.110, 149.154.167.220
+2026-09-01 14:53:17,904 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110, 149.154.167.220
+2026-09-01 14:53:17,910 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110, 149.154.167.220
+2026-09-01 14:53:18,076 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-09-01 14:53:30,796 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:53:40,880 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: 
+2026-09-01 14:53:46,221 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ()
+2026-09-01 14:53:46,228 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connect attempt 1/8 failed: httpx.ConnectError:  — retrying in 1s
+2026-09-01 14:53:47,249 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 2/8)…
+2026-09-01 14:53:59,952 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-01 14:54:07,253 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-09-01 14:54:07,418 INFO gateway.run: ✓ telegram reconnected successfully
+2026-09-01 14:54:18,924 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:54:27,450 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands FAILED for scope BotCommandScopeDefault: Timed out
+2026-09-01 14:54:30,948 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: 
+2026-09-01 14:54:33,135 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ()
+2026-09-01 14:54:33,141 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network _redact_telegram_error_text(error), scheduling reconnect: httpx.ConnectError: 
+2026-09-01 14:54:33,144 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ConnectError: 
+2026-09-01 14:54:39,196 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-01 14:54:39,200 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 14:54:40,534 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: 
+2026-09-01 14:54:45,925 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-01 14:54:47,083 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-09-01 14:54:48,932 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-01 14:54:48,993 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 1); health pending getUpdates progress
+2026-09-01 14:54:49,082 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-09-01 14:54:49,084 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 6 hidden (over 60 limit). Use /commands for full list.
+2026-09-01 14:55:03,938 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling confirmed healthy: getUpdates progressing (generation 2)
+2026-09-01 14:57:03,121 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-01 14:57:03,138 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 14:57:03,394 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: All connection attempts failed
+2026-09-01 14:57:03,427 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 14:57:03,444 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network _redact_telegram_error_text(error), scheduling reconnect: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-09-01 14:57:03,453 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-09-01 14:57:04,943 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 14:57:05,030 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: All connection attempts failed
+2026-09-01 14:57:05,042 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 14:57:06,637 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 14:57:06,714 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: All connection attempts failed
+2026-09-01 14:57:06,724 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 15:00:14,216 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path api.telegram.org failed; re-walking IPv4 literals before the hostname
+2026-09-01 15:00:14,223 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 15:00:14,238 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 15:00:14,409 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 15:00:14,940 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: All connection attempts failed
+2026-09-01 15:00:15,036 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: All connection attempts failed
+2026-09-01 15:00:15,055 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 15:00:16,373 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 15:00:18,582 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.167.220 (dual-stack hostname tried last — #87015)
+2026-09-01 15:00:18,730 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 1); health pending getUpdates progress
+2026-09-01 15:00:31,756 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-01 15:00:31,762 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling confirmed healthy: getUpdates progressing (generation 3)
+2026-09-01 15:01:34,806 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-01 15:01:34,808 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 15:01:47,371 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.167.220 (dual-stack hostname tried last — #87015)
+2026-09-01 15:06:10,897 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.167.220 failed; re-walking IPv4 literals before the hostname
+2026-09-01 15:06:10,899 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: 
+2026-09-01 15:06:25,137 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-01 15:07:58,805 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-01 15:07:58,809 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-01 15:08:13,155 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.167.220 (dual-stack hostname tried last — #87015)
+2026-09-01 15:12:38,364 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.167.220 failed; re-walking IPv4 literals before the hostname
+2026-09-01 15:12:38,378 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: All connection attempts failed
+2026-09-01 15:12:38,842 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.167.220 failed; re-walking IPv4 literals before the hostname
+2026-09-01 15:12:38,848 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: All connection attempts failed
+2026-09-01 15:12:38,943 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 15:12:38,956 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 15:12:38,961 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 15:12:38,967 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 15:12:38,973 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling degraded (heartbeat probe); gateway stays alive and will retry. Error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-09-01 15:12:38,980 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-09-01 15:12:40,079 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 15:12:40,165 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: All connection attempts failed
+2026-09-01 15:12:40,192 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 15:12:41,788 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 15:12:41,854 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: All connection attempts failed
+2026-09-01 15:12:41,860 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 15:38:01,161 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 15:38:01,333 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 15:38:01,494 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: All connection attempts failed
+2026-09-01 15:38:01,525 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: All connection attempts failed
+2026-09-01 15:38:01,537 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 15:38:01,545 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 15:38:01,767 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 15:38:01,840 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: All connection attempts failed
+2026-09-01 15:38:01,848 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 15:38:02,153 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling reconnect failed: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-09-01 15:38:02,171 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 2/10), reconnecting in 10s. Error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-09-01 15:39:04,539 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-01 15:39:04,625 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: All connection attempts failed
+2026-09-01 15:39:04,634 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-01 15:39:04,676 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling reconnect failed: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-09-01 15:39:04,679 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 3/10), reconnecting in 20s. Error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-09-07 20:05:00,275 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-07 20:05:03,672 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: All connection attempts failed
+2026-09-07 20:05:03,748 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-07 20:05:04,370 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-07 20:05:04,518 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: All connection attempts failed
+2026-09-07 20:05:04,539 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-07 20:05:04,773 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling reconnect failed: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-09-07 20:05:04,821 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 4/10), reconnecting in 40s. Error: httpx.ConnectError: [Errno 11001] getaddrinfo failed
+2026-09-07 20:14:28,259 INFO gateway.control_socket: Gateway control pipe listening at \\.\pipe\hermes-gateway-435b88dba892bff0
+2026-09-07 20:14:28,384 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=9140, started_at=2026-09-01T08:23:17.338551+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-31T12:25:57.814907+00:00 last_mem=None suspected_oom=False
+2026-09-07 20:14:28,503 INFO gateway.run: Starting Hermes Gateway...
+2026-09-07 20:14:28,507 INFO gateway.run: Session storage: C:\Users\hm901\AppData\Local\hermes\sessions
+2026-09-07 20:14:28,512 INFO gateway.run: Agent budget: max_iterations=150 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-09-07 20:14:28,512 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-09-07 20:14:28,673 INFO gateway.run: Connecting to telegram...
+2026-09-07 20:14:28,793 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-09-07 20:14:29,747 INFO plugins.platforms.telegram.telegram_network: DoH discovery yielded no usable IPs (system DNS: unknown); using seed fallback IPs 149.154.166.110, 149.154.167.220
+2026-09-07 20:14:29,751 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110, 149.154.167.220
+2026-09-07 20:14:29,751 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110, 149.154.167.220
+2026-09-07 20:14:29,868 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-09-07 20:14:29,969 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-07 20:14:30,032 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: All connection attempts failed
+2026-09-07 20:14:30,087 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-07 20:14:30,093 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connect attempt 1/8 failed: httpx.ConnectError: [Errno 11001] getaddrinfo failed — retrying in 1s
+2026-09-07 20:14:31,099 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 2/8)…
+2026-09-07 20:14:31,181 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-07 20:14:31,250 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: All connection attempts failed
+2026-09-07 20:14:31,265 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-07 20:14:31,269 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connect attempt 2/8 failed: httpx.ConnectError: [Errno 11001] getaddrinfo failed — retrying in 2s
+2026-09-07 20:14:32,764 INFO gateway.run: Turn machinery warmed in 4.1s (33 tool schema(s) materialized)
+2026-09-07 20:14:33,280 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 3/8)…
+2026-09-07 20:14:33,336 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-07 20:14:33,385 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: All connection attempts failed
+2026-09-07 20:14:33,395 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-07 20:14:33,398 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connect attempt 3/8 failed: httpx.ConnectError: [Errno 11001] getaddrinfo failed — retrying in 4s
+2026-09-07 20:14:37,429 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 4/8)…
+2026-09-07 20:14:37,491 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-07 20:14:37,554 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: All connection attempts failed
+2026-09-07 20:14:37,562 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-07 20:14:37,564 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connect attempt 4/8 failed: httpx.ConnectError: [Errno 11001] getaddrinfo failed — retrying in 8s
+2026-09-07 20:14:45,570 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 5/8)…
+2026-09-07 20:14:45,638 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: All connection attempts failed
+2026-09-07 20:14:45,713 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: All connection attempts failed
+2026-09-07 20:14:45,723 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ([Errno 11001] getaddrinfo failed)
+2026-09-07 20:14:45,725 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connect attempt 5/8 failed: httpx.ConnectError: [Errno 11001] getaddrinfo failed — retrying in 15s
+2026-09-07 20:15:00,736 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 6/8)…
+2026-09-07 20:15:02,026 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-07 20:15:13,262 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-07 20:15:13,262 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling confirmed healthy: getUpdates progressing (generation 1)
+2026-09-07 20:15:13,326 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-09-07 20:15:17,747 INFO gateway.run: ✓ telegram connected
+2026-09-07 20:15:18,276 INFO gateway.run: Gateway running with 1 platform(s)
+2026-09-07 20:15:18,379 INFO gateway.run: Channel directory built: 1 target(s)
+2026-09-07 20:15:18,763 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-09-07 20:15:19,142 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-09-07 20:15:19,452 INFO gateway.run: Press Ctrl+C to stop
+2026-09-07 20:15:19,508 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (C:\Users\hm901\AppData\Local\hermes\kanban\.dispatcher.lock)
+2026-09-07 20:15:19,537 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-09-07 20:15:19,537 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 6 hidden (over 60 limit). Use /commands for full list.
+2026-09-07 20:15:19,592 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-09-07 20:15:24,509 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-09-07 20:27:47,098 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-07 20:27:47,098 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-07 20:27:58,864 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.167.220 (dual-stack hostname tried last — #87015)
+2026-09-07 20:28:13,559 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.167.220 failed; re-walking IPv4 literals before the hostname
+2026-09-07 20:28:13,559 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: 
+2026-09-07 20:28:27,228 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-07 20:32:40,629 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-07 20:32:40,629 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-07 20:32:53,293 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.167.220 (dual-stack hostname tried last — #87015)
+2026-09-07 20:34:39,785 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.167.220 failed; re-walking IPv4 literals before the hostname
+2026-09-07 20:34:39,785 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: [WinError 10038] An operation was attempted on something that is not a socket
+2026-09-07 20:34:41,468 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-07 20:36:03,690 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path api.telegram.org failed; re-walking IPv4 literals before the hostname
+2026-09-07 20:36:03,695 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Dual-stack api.telegram.org path failed ()
+2026-09-07 20:36:16,083 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-07 20:36:34,210 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-07 20:36:34,210 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: [WinError 10038] An operation was attempted on something that is not a socket
+2026-09-07 20:36:38,683 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.167.220 (dual-stack hostname tried last — #87015)
+2026-09-07 20:37:05,133 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-07 20:37:05,133 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-07 20:37:17,430 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.167.220 (dual-stack hostname tried last — #87015)
+2026-09-07 20:44:23,152 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.167.220 failed; re-walking IPv4 literals before the hostname
+2026-09-07 20:44:23,156 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.167.220 failed: 
+2026-09-07 20:44:25,055 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
